@@ -62,7 +62,7 @@ body {
 }
 
 .result-section p:first-child {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -79,7 +79,8 @@ body {
 
 .score-circle h1 {
     color: var(--White);
-    font-size: 4rem;
+    font-size: 4.5rem;
+    font-weight: 800;
 }
 
 .score-description {
@@ -88,7 +89,7 @@ body {
 
 .score-description h2 {
     color: var(--White);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -107,7 +108,7 @@ body {
 .summary-section h3 {
     color: var(--Dark-gray-blue);
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .summary-item {
@@ -117,7 +118,7 @@ body {
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .summary-info {
@@ -126,22 +127,22 @@ body {
 }
 
 .reaction {
-    background-color: hsla(0, 100%, 67%, 10%);
+    background-color: hsla(0, 100%, 67%, 5%);
     color: var(--Light-red);
 }
 
 .memory {
-    background-color: hsla(39, 100%, 56%, 10%);
+    background-color: hsla(39, 100%, 56%, 5%);
     color: var(--Orangey-yellow);
 }
 
 .verbal {
-    background-color: hsla(166, 100%, 37%, 10%);
+    background-color: hsla(166, 100%, 37%, 5%);
     color: var(--Green-teal);
 }
 
 .visual {
-    background-color: hsla(234, 85%, 45%, 10%);
+    background-color: hsla(234, 85%, 45%, 5%);
     color: var(--Cobalt-blue);
 }
 
