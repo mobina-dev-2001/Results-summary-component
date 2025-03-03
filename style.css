@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
+    font-family: 'Hanken Grotesk', serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 730px;
+    background-color: var(--White);
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.result-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue) 50%);
+    border-radius: 30px;
+}
+
+.result-section p {
+    color: var(--Light-lavender);
+}
+
+.result-section p:first-child {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.score-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 12rem;
+    height: 12rem;
+    background-image: linear-gradient(var(--Violet-blue) 30%, var(--Persian-blue));
+    border-radius: 50%;
+    text-align: center;
+}
+
+.score-circle h1 {
+    color: var(--White);
+    font-size: 4rem;
+}
+
+.score-description {
+    text-align: center;
+}
+
+.score-description h2 {
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.score-description p {
+    padding: 1rem;
+}
+
+.summary-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2.5rem;
+}
+
+.summary-section h3 {
+    color: var(--Dark-gray-blue);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.summary-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 10%);
+    color: var(--Light-red);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 10%);
+    color: var(--Orangey-yellow);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 10%);
+    color: var(--Green-teal);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 10%);
+    color: var(--Cobalt-blue);
+}
+
+.set-score {
+    color: var(--Dark-gray-blue);
+}
+
+.total-score {
+    color: var(--Dark-gray-blue);
+    opacity: 50%;
+}
+
+.continue-btn {
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 1rem;
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    border-radius: 30px;
+    color: var(--White);
+    font-family: 'Hanken Grotesk', serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+}
+
+.continue-btn:hover {
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue) 50%);
+    -webkit-box-shadow: 0px 10px 30px 5px rgba(46, 43, 233, 0.25);
+    box-shadow: 0px 10px 30px 5px rgba(46, 43, 233, 0.25);
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .result-section {
+        gap: 1.5rem;
+        width: 100%;
+        padding: 1.75rem;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .result-section p,
+    .summary-list p {
+        font-size: 1rem;
+    }
+
+    .result-section p:first-child,
+    .summary-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .score-circle {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .score-circle h1 {
+        font-size: 3.5rem;
+    }
+
+    .score-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .score-description p {
+        padding: .5rem 1rem;
+    }
+
+    .summary-section {
+        width: 100%;
+        padding: 1.75rem;
+    }
+
+    .continue-btn {
+        margin: 0;
+    }
+}
